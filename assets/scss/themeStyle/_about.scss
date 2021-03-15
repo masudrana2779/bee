@@ -1,0 +1,93 @@
+/*   ============================================         aboutWrap             ==========================================  */
+.aboutWrap {
+    background: $white;
+}
+
+.aboutImgContent {
+    .imgInner {
+        position: relative;
+        display: inline-block;
+        z-index: 1;
+        .overlayBg {
+            position: absolute;
+            top: -30px;
+            left: -30px;
+            width: 100%;
+            height: 100%;
+            //border: 15px solid $dark;
+            z-index: -1;
+            border-radius: 10px;
+        }
+
+        .aboutImg {
+            border: 1px solid $dark;
+            border-radius: 10px;
+            box-shadow: 0px 20px 80px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .imgShape {
+            z-index: -1;
+            position: absolute;
+            bottom: -60px;
+            right: -50px;
+            img {}
+        }
+    }
+}
+
+.aboutMainContent {
+    .aboutTitle {
+        margin-bottom: 20px;
+    }
+
+    .aboutPara {
+        margin-bottom: 30px;
+    }
+
+    .infoiList {
+        margin-bottom: 30px;
+        ul {
+
+            li {
+                margin-bottom: 5px;
+                padding-bottom: 5px;
+                //border-bottom: 1px dotted $lightBorder;
+                padding-left : 30px;
+                position     : relative;
+                color    : $dark;
+                &:last-child {
+                    border: none;
+                }
+
+                i {
+                    position: absolute;
+                    left    : 0;
+                    top     : 4px;
+                }
+
+                .infoContent {
+                    span {
+                        display: inline-block;
+
+                        &:nth-child(1) {
+                            color    : $dark;
+                            max-width: 150px;
+                            width    : 100%;
+                        }
+
+                        &:nth-child(2) {
+                            max-width: 50px;
+                            width    : 100%;
+                        }
+
+                        &:nth-child(3) {
+                            color: $gray;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*   ============================================         aboutWrap             ==========================================  */

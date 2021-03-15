@@ -1,0 +1,21 @@
+
+
+// Online Style
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600,700&display=swap');
+
+
+
+
+// Global style
+@import "./globalStyle/variable";
+@import "./globalStyle/typography";
+@import "./globalStyle/globalStyle";
+
+// custom style
+@import "./themeStyle/header";
+@import "./themeStyle/banner";
+@import "./themeStyle/about";
+@import "./themeStyle/skill";
+@import "./themeStyle/featured";

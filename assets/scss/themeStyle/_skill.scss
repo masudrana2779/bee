@@ -1,0 +1,78 @@
+/*  =========================           skillWrap             ========================   */
+.skillWrap {
+    background: #fff;
+
+    .secTop {
+        .secSubTitle {}
+
+        .secTitle {}
+    }
+
+    .skillContent {
+        .skillTitle {
+            margin-bottom: 20px;
+        }
+
+        .secPara {
+            margin-bottom: 30px;
+        }
+
+        .btnWrap {
+            .btnBorder {
+                padding: 5px 20px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.skillProgressBarWrap {}
+
+.progressSingleItem {
+    margin-bottom: 25px;
+
+    .progressTitle {
+        position: relative;
+        margin-bottom: 5px;
+
+        span {
+            position: absolute;
+            right   : 0;
+        }
+    }
+
+    .progress {
+        height       : 4px;
+        border-radius: 0;
+
+        .progress-bar {
+            background: $dark;
+        }
+    }
+}
+
+.clientCountDown {
+    padding-top: 50px;
+    .counterItem {
+        .counterNumber {
+            font-size: 40px;
+            font-weight: 700;
+            .counter {}
+        }
+
+        .counterBottom {
+            margin-bottom: 10px;
+            .countIcon {
+                font-size: 30px;
+                margin-right: 15px;
+                color: #a0a0a0;
+                i {}
+            }
+        }
+            .counterTitle {
+                font-size: 20px;
+            }
+    }
+}
+
+/*  =========================           skillWrap             ========================   */

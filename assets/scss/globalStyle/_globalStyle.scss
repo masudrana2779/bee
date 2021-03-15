@@ -1,0 +1,94 @@
+* {
+  margin : 0;
+  padding: 0;
+}
+
+body {
+  margin-top: 100vh;
+  font-family: $pop;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: 1350px;
+}
+
+.btnWrap {
+  .btnGlob {
+    display        : inline-block;
+    text-decoration: none;
+    padding        : 10px 40px;
+    color          : $white;
+    background     : transparent;
+    border         : 2px solid $white;
+    border-radius  : 26px;
+    font-size      : 18px;
+    line-height    : 28px;
+    font-weight    : 500;
+    outline        : none;
+    transition     : all 0.5s;
+
+    &:hover {
+      background: $white;
+    }
+
+    &.btnSqure {
+      background: $dark;
+      border    : 2px solid $dark;
+      // background      : linear-gradient(-50deg, #f300ff, #383fca, #f300ff,);
+      // border: none;
+
+      &:hover {
+        background: $white;
+        color     : $dark;
+      }
+    }
+
+    &.btnBorder {
+      background: $white;
+      color     : $dark;
+
+      &:hover {
+        background: $dark;
+        border    : 2px solid $dark;
+        color     : $white;
+      }
+    }
+  }
+
+}
+
+.secPadding {
+  padding: 70px 0;
+}
+
+.secTop {
+  margin-bottom: 50px;
+  text-align: center;
+
+  .secSubTitle {
+    font-size : $f16;
+    font-style: italic;
+  }
+
+  .secTitle {
+    font-size     : $f40;
+    text-transform: uppercase;
+    display       : inline-block;
+    color         : $dark;
+    font-weight   : 700;
+    margin-bottom : 20px;
+  }
+
+}
