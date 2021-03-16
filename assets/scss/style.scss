@@ -6,7 +6,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600,700&display=swap');
 
 
-
+// icons
+//@import "./icon/flat_icon/flaticon.css";
 
 // Global style
 @import "./globalStyle/variable";
@@ -16,6 +17,9 @@
 // custom style
 @import "./themeStyle/header";
 @import "./themeStyle/banner";
-@import "./themeStyle/about";
+@import "themeStyle/about";
+@import "themeStyle/service";
+@import "themeStyle/about_1";
 @import "./themeStyle/skill";
 @import "./themeStyle/featured";
+@import "./themeStyle/footer";

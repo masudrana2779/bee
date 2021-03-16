@@ -1,88 +1,71 @@
-/*   ============================================         aboutWrap             ==========================================  */
-.aboutWrap {
-    background: $white;
-}
+/*  =======================   about_wrap  ================================== */ 
 
-.aboutImgContent {
-    .imgInner {
+.about_wrap {
+    padding: 120px 0 165px;
+    .about_img_content {
         position: relative;
-        display: inline-block;
         z-index: 1;
-        .overlayBg {
+        .about_img {
+            img {
+
+            }
+        }
+        .about_shape {
             position: absolute;
-            top: -30px;
-            left: -30px;
-            width: 100%;
-            height: 100%;
-            //border: 15px solid $dark;
+            bottom: -45px;
+            left: -60px;
+            display: inline;
             z-index: -1;
-            border-radius: 10px;
-        }
+            img {
 
-        .aboutImg {
-            border: 1px solid $dark;
-            border-radius: 10px;
-            box-shadow: 0px 20px 80px 20px rgba(0, 0, 0, 0.3);
+            }
         }
-
-        .imgShape {
-            z-index: -1;
+        .about_small_img {
             position: absolute;
-            bottom: -60px;
-            right: -50px;
-            img {}
+            top: 50%;
+            transform: translateY(-50%);
+            right: 30px;
+            display: inline;
+            img {
+                box-shadow: 0 10px 33px #858B97;
+            }
         }
     }
-}
+    .about_content {
+        padding-top: 80px;
+        .sec_sub_title {
+        }
+        .sec_title {
+            margin-bottom: 35px;
+        }
+        p {
 
-.aboutMainContent {
-    .aboutTitle {
-        margin-bottom: 20px;
-    }
-
-    .aboutPara {
-        margin-bottom: 30px;
-    }
-
-    .infoiList {
-        margin-bottom: 30px;
-        ul {
-
-            li {
-                margin-bottom: 5px;
-                padding-bottom: 5px;
-                //border-bottom: 1px dotted $lightBorder;
-                padding-left : 30px;
-                position     : relative;
-                color    : $dark;
-                &:last-child {
-                    border: none;
+        }
+        .about_service_wrap {
+            .about_service_single_item {
+                padding-top: 20px;
+                .icon {
+                    i {
+                        color: #414D60; 
+                        transition: all 0.5s;
+                        &:before {
+                            font-size: 40px;
+                        }
+                    }
                 }
-
-                i {
-                    position: absolute;
-                    left    : 0;
-                    top     : 4px;
+                .service_title {
+                    color: #414D60;
+                    font: 500 18px/30px $pop;
+                    transition: all 0.5s;
                 }
-
-                .infoContent {
-                    span {
-                        display: inline-block;
-
-                        &:nth-child(1) {
-                            color    : $dark;
-                            max-width: 150px;
-                            width    : 100%;
+                &:hover {
+                    .icon {
+                        i {
+                            color: $brand_color; 
                         }
-
-                        &:nth-child(2) {
-                            max-width: 50px;
-                            width    : 100%;
-                        }
-
-                        &:nth-child(3) {
-                            color: $gray;
-                        }
+                    }
+                    .service_title {
+                        color: $brand_color; 
                     }
                 }
             }
@@ -90,4 +73,7 @@
     }
 }
 
-/*   ============================================         aboutWrap             ==========================================  */
+
+
+
+/*  =======================   about_wrap  ================================== */ 

@@ -1,0 +1,97 @@
+/*  =====================    service_wrap   ======================================   */ 
+.service_wrap {
+    background: #fff8f9 url(../img/service_shap.png) no-repeat scroll right -100px bottom;
+    padding: 105px 0  65px;
+
+    .sec_title {
+        margin-bottom: 70px;
+    }
+    .service_item_row {
+        margin: 0 -30px;
+        .service_item_col {
+            padding: 0 30px;
+        }
+    }
+}
+.service_single_item {
+    background: $primary_color;
+    padding: 20px 30px 35px;
+    margin-bottom: 60px;
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+    &::before,
+    &::after {
+        position: absolute;
+        content: "";
+        height: 150px;
+        width: 2px;
+        background: $brand_color;
+        transition: all 0.5s;
+        opacity: 0;
+    }
+    &::before {
+        left: 0;
+        top: 80%;
+        transform: translateY(-50%);
+    }
+    &::after {
+        right: 0;
+        bottom: 80%;
+        transform: translateY(50%);
+    }
+    &:hover {
+        box-shadow: 0 15px 20px rgba(133, 139, 151, 0.34);
+        &::before,
+        &::after {
+            opacity: 1;
+        }
+        &::before {
+            top: 50%;
+        }
+        &::after {
+            bottom: 50%;
+        }
+    }
+    .service_icon {
+        margin-bottom: 7px;
+        i {
+            color: $brand_color;
+            &::before {
+                font-size: 64px;
+            }
+        }
+    }
+    .service_title {
+        margin-bottom: 20px;
+    }
+    .service_para {
+        margin-bottom: 35px;
+    }
+    .read_more {
+        color: #414D60;
+        font: 400 14px/30px $pop;
+        padding-right: 28px;
+        transition: all 0.5s;
+        text-decoration: none;
+        i {
+            color: #414D60;
+            position: absolute;
+            margin-left: 10px;
+            transition: all 0.5s;
+            &::before {
+                font-size: 18px;
+            }
+        }
+        &:hover {
+            color: $brand_color;
+            i {
+                margin-left: 15px; 
+                color: $brand_color;
+            }
+        }
+    }
+}
+
+
+/*  =====================    service_wrap   ======================================   */ 

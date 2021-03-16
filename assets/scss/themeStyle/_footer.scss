@@ -1,0 +1,94 @@
+/*  ========================================  footer_wrap  ======================================  */
+.footer_wrap {
+    background: url(../img/footer_bg.jpg) no-repeat scroll top left / cover;
+    position: relative;
+    padding: 110px 0 80px;
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(26, 27, 70, 0.85);
+    }
+
+    .footer_single_item {
+        .footer_logo {
+            display: inline-block;
+            font: 600 30px/30px $pop;
+            color: $primary_color;
+            text-transform: uppercase;
+            text-decoration: none;
+            margin-bottom: 30px;
+
+            img {
+                max-width: 168px;
+                width: 100%;
+            }
+        }
+
+        p {
+            color: $primary_color;
+            margin-bottom: 30px;
+
+            a {
+                color: $primary_color;
+                font: 400 15px/30px $pop;
+                display: block;
+            }
+        }
+
+        .footer_title {
+            color: $primary_color;
+            font: 600 23px/27px $pop;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+
+        .footer_menu {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+                margin-bottom: 15px;
+
+                a {
+                    display: inline-block;
+                    color: #DEDBDB;
+                    font: 400 15px/30px $pop;
+                    text-decoration: none;
+                    position: relative;
+                    transition: all 0.5s;
+
+                    &:before {
+                        position: absolute;
+                        content: "-";
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: 5px;
+                        transition: all 0.5s;
+                        color: #DEDBDB;
+                        opacity: 0;
+                    }
+
+                    &:hover {
+                        color: $brand_color;
+                        padding-left: 8px;
+
+                        &:before {
+                            left: 0;
+                            color: $brand_color;
+                            opacity: 1;
+                        }
+                    }
+
+
+                }
+            }
+        }
+    }
+}
+
+/*  ========================================  footer_wrap  ======================================  */
