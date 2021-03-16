@@ -1,4 +1,4 @@
-! function (e) {
+!function (e) {
     "use strict";
 
 
@@ -19,6 +19,7 @@
                 });
             }
         }
+
         scrollSmoothTop();
 
         // menuOpacity
@@ -32,6 +33,7 @@
                 $("#mainMenu .navbar-nav .nav-link").removeClass("menuHover");
             });
         }
+
         menuOpacity();
 
         // headerFixed
@@ -40,13 +42,12 @@
             var sdsdsdsdsd = $(".banner_wrap").outerHeight();
             if ($scTop > sdsdsdsdsd) {
                 $(".header").addClass("fixdHeader");
-            }
-            else {
+            } else {
                 $(".header").removeClass("fixdHeader");
             }
         }
-        headerFixed();
 
+        headerFixed();
 
 
         $(window).on('scroll', function () {
@@ -66,6 +67,69 @@
 
             headerFixed();
         });
+
+
+        /*===========Portfolio isotope js===========*/
+        function filTeTiSotOp() {
+            var $grid = $('.filter_items_section');
+            if ($grid.length) {
+                $grid.imagesLoaded(function () {
+                    $grid.isotope({
+                        itemSelector: '.filter_single_item',
+                        percentPosition: true,
+                        layoutMode: 'masonry',
+                        filter: "*",
+                        animationOptions: {
+                            duration: 1000
+                        },
+                        stagger: 0,
+                        transitionDuration: '0.9s',
+                        masonry: {
+                            // use outer width of grid-sizer for columnWidth
+                            columnWidth: 1
+                        }
+                    });
+                    $(".filter_menu li").on('click', function () {
+                        $(".filter_menu li").removeClass("active");
+                        $(this).addClass("active");
+
+                        var selector = $(this).attr("data-filter");
+                        $grid.isotope({
+                            filter: selector,
+                            animationOptions: {
+                                animationDuration: 750,
+                                easing: 'linear',
+                                queue: false,
+                            }
+                        });
+                        return false;
+                    });
+                });
+            }
+        }
+
+        filTeTiSotOp();
+
+
+        /*---------LIGHT-BOX js-----------*/
+
+        function lightBoxImages() {
+
+            var selectorG = '.lightbox';
+            if ($(selectorG).length) {
+                var instanceG = $(selectorG).imageLightbox({
+                    quitOnDocClick: false,
+                    button: true,
+                    activity: true,
+                    overlay: true,
+                    arrows: true,
+                    preloadNext: true,
+                });
+            }
+        }
+
+        lightBoxImages();
+
     });
 
 }(jQuery);

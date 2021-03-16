@@ -21,7 +21,7 @@ p {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1200px;
 }
 
 .btnWrap {
@@ -68,6 +68,36 @@ p {
   }
 
 }
+
+
+
+a,
+.btn,
+button {
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover,
+a:focus,
+.btn:hover,
+.btn:focus,
+button:hover,
+button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: none;
+  box-shadow: none;
+}
+
 
 .secPadding {
   padding: 70px 0;
