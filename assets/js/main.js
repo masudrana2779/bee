@@ -130,6 +130,28 @@
 
         lightBoxImages();
 
+         /*---------------------------------------
+                SKILLS PROGRESS BAR
+         ---------------------------------------*/
+        function skillBAr1(){
+            var valll = jQuery('.count').innerHTML;
+            try {
+                jQuery('.skillProgressBarWrap').appear(function () {
+                    jQuery('.price_bar_single').each(function () {
+                        jQuery(this).find('.price_bar').animate({
+                            width: jQuery(this).attr('data-percent'),
+                        }, 2500);
+                    });
+                });
+            } catch (err) {
+
+            }
+        }
+        skillBAr1();
+        /*---------------------------------------
+                SKILLS PROGRESS BAR
+         ---------------------------------------*/
+
     });
 
 }(jQuery);

@@ -1,94 +1,132 @@
-/*  ========================================  footer_wrap  ======================================  */
+/*  ================  footer_wrap  ============================ */
 .footer_wrap {
-    background: url(../img/footer_bg.jpg) no-repeat scroll top left / cover;
-    position: relative;
-    padding: 110px 0 80px;
-
-    .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(26, 27, 70, 0.85);
-    }
-
-    .footer_single_item {
-        .footer_logo {
-            display: inline-block;
-            font: 600 30px/30px $pop;
-            color: $primary_color;
-            text-transform: uppercase;
-            text-decoration: none;
-            margin-bottom: 30px;
-
-            img {
-                max-width: 168px;
-                width: 100%;
-            }
-        }
-
-        p {
-            color: $primary_color;
-            margin-bottom: 30px;
-
-            a {
-                color: $primary_color;
-                font: 400 15px/30px $pop;
-                display: block;
-            }
-        }
-
-        .footer_title {
-            color: $primary_color;
-            font: 600 23px/27px $pop;
-            margin-top: 5px;
-            margin-bottom: 20px;
-        }
-
-        .footer_menu {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-
-            li {
-                margin-bottom: 15px;
-
-                a {
-                    display: inline-block;
-                    color: #DEDBDB;
-                    font: 400 15px/30px $pop;
-                    text-decoration: none;
-                    position: relative;
-                    transition: all 0.5s;
-
-                    &:before {
-                        position: absolute;
-                        content: "-";
-                        top: 50%;
-                        transform: translateY(-50%);
-                        left: 5px;
-                        transition: all 0.5s;
-                        color: #DEDBDB;
-                        opacity: 0;
-                    }
-
-                    &:hover {
-                        color: $brand_color;
-                        padding-left: 8px;
-
-                        &:before {
-                            left: 0;
-                            color: $brand_color;
-                            opacity: 1;
-                        }
-                    }
-
-
-                }
-            }
-        }
-    }
+  background: #0e244b url(../img/footer_bg.jpg) no-repeat scroll top left/cover;
+  padding: 115px 0 0;
 }
 
-/*  ========================================  footer_wrap  ======================================  */
+.footer_wrap .footer_top {
+  margin-bottom: 70px;
+}
+
+.footer_wrap .footer_left_widget {
+  margin-bottom: 50px;
+}
+
+.footer_wrap .footer_left_widget .footer_logo {
+  margin-bottom: 25px;
+}
+
+.footer_wrap .footer_left_widget .footer_logo a {
+  display: inline-block;
+  font: normal 28px/30px $pop;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer_wrap .footer_left_widget .footer_logo a img {
+  display: inline-block;
+}
+
+.footer_wrap .footer_left_widget p {
+  color: #a3afd0;
+  max-width: 390px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.footer_wrap .footer_left_widget .footer_social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer_wrap .footer_left_widget .footer_social li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer_wrap .footer_left_widget .footer_social li:last-child {
+  margin-right: 0;
+}
+
+.footer_wrap .footer_left_widget .footer_social li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 38px;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.footer_wrap .footer_left_widget .footer_social li a:hover {
+  background: #fff;
+  color: #faa43c;
+}
+
+.footer_widget {
+  padding-top: 10px;
+  margin-bottom: 50px;
+}
+
+.footer_widget .footer_title {
+  color: #fff;
+  font: normal 18px/30px $pop;
+  margin-bottom: 20px;
+}
+
+.footer_widget .footer_menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer_widget .footer_menu li a {
+  display: inline-block;
+  color: #a3afd0;
+  font: 400 14px/29px $pop;
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.footer_widget .footer_menu li a::before {
+  position: absolute;
+  content: "-";
+  top: 50%;
+  font: 400 14px/29px $pop;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 5px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 0;
+  color: #faa43c;
+}
+
+.footer_widget .footer_menu li a:hover {
+  color: #faa43c;
+  padding-left: 10px;
+}
+
+.footer_widget .footer_menu li a:hover::before {
+  left: 0;
+  opacity: 1;
+}
+
+.footer_bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 50px 0 55px;
+}
+
+.footer_bottom .copy_right {
+  color: #a3afd0;
+  font: 400 14px/29px $pop;
+}
+
+/*  ================  footer_wrap  ============================ */

@@ -56,6 +56,27 @@ p {
 .container {
   max-width: 1200px; }
 
+.btn_glob {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #faa43c;
+  background: #faa43c;
+  color: #fff;
+  font: normal 14px/20px "Poppins", sans-serif;
+  text-transform: uppercase;
+  border-radius: 25px;
+  padding: 14px 39px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+
+.btn_glob i {
+  margin-right: 5px; }
+
+.btn_glob:hover {
+  color: #faa43c;
+  background: #fff; }
+
 .btnWrap .btnGlob {
   display: inline-block;
   text-decoration: none;
@@ -465,6 +486,104 @@ button:focus {
     font-size: 20px; }
 
 /*  =========================           skillWrap             ========================   */
+.price_bar_item {
+  height: 18px;
+  width: 100%;
+  border: 1px solid #1b3869;
+  border-radius: 50px;
+  padding: 6px; }
+  .price_bar_item .price_bar_single {
+    background: #d1c4e9;
+    border-radius: 5px;
+    height: 5px; }
+    .price_bar_item .price_bar_single .price_bar {
+      height: 5px;
+      width: 10%;
+      text-align: right;
+      background: #673ab7;
+      border-radius: 5px;
+      position: relative;
+      overflow: initial !important; }
+      .price_bar_item .price_bar_single .price_bar .count {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        background: #4527a0;
+        border-radius: 50px;
+        font-size: 12px;
+        line-height: 30px;
+        display: block;
+        width: 70px;
+        text-align: center;
+        right: 0;
+        color: #fff;
+        border: 2px solid #fff8f9; }
+
+.skill_wrap {
+  background: #f8f9fb;
+  padding: 95px 0 65px; }
+
+/*=====Start skill-two-area css =========*/
+.skill-two-area {
+  padding: 135px 0px 110px; }
+
+.skill-two-area .skill-text {
+  padding-right: 5px;
+  position: relative;
+  z-index: 1; }
+
+.skill-two-area .progress-element {
+  padding-top: 0px;
+  position: relative;
+  z-index: 1; }
+
+.skill-two-area .progress-element .pr-item {
+  margin-top: 0px;
+  margin-bottom: 40px; }
+
+.pr-item {
+  margin-bottom: 40px;
+  margin-top: 0; }
+
+.bt-skill-item {
+  margin-top: 40px; }
+
+.bt-skill {
+  margin-top: 5px; }
+
+.bt-skill .bt-skillholder {
+  background: #e7ebf1;
+  display: block;
+  height: 8px;
+  width: 100%;
+  border-radius: 0px; }
+
+.bt-skill .bt-skillholder .dataBar {
+  position: absolute;
+  content: " (" attr(data-percent) ")";
+  font-size: 10px;
+  background: red;
+  color: #fff;
+  padding: 0 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 0;
+  height: 26px; }
+
+.bt-skill .bt-skillholder .bt-skillbar {
+  height: 8px;
+  position: relative;
+  float: left;
+  border-radius: 0px;
+  background-image: -moz-linear-gradient(0deg, #fec110 0%, #fbd214 100%);
+  background-image: -webkit-linear-gradient(0deg, #fec110 0%, #fbd214 100%);
+  background-image: -ms-linear-gradient(0deg, #fec110 0%, #fbd214 100%); }
+
+/*=====End skill-two-area css =========*/
 /*   ======================              fraturedWrap                 ==========================   */
 .fraturedWrap {
   background: #ffffff; }
@@ -729,74 +848,254 @@ button:focus {
   line-height: 22px;
   font-weight: 500; }
 
-/*  ========================================  footer_wrap  ======================================  */
-.footer_wrap {
-  background: url(../img/footer_bg.jpg) no-repeat scroll top left/cover;
-  position: relative;
-  padding: 110px 0 80px; }
-  .footer_wrap .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(26, 27, 70, 0.85); }
-  .footer_wrap .footer_single_item .footer_logo {
-    display: inline-block;
-    font: 600 30px/30px "Poppins", sans-serif;
-    color: #ffffff;
-    text-transform: uppercase;
-    text-decoration: none;
-    margin-bottom: 30px; }
-    .footer_wrap .footer_single_item .footer_logo img {
-      max-width: 168px;
-      width: 100%; }
-  .footer_wrap .footer_single_item p {
-    color: #ffffff;
-    margin-bottom: 30px; }
-    .footer_wrap .footer_single_item p a {
-      color: #ffffff;
-      font: 400 15px/30px "Poppins", sans-serif;
-      display: block; }
-  .footer_wrap .footer_single_item .footer_title {
-    color: #ffffff;
-    font: 600 23px/27px "Poppins", sans-serif;
-    margin-top: 5px;
-    margin-bottom: 20px; }
-  .footer_wrap .footer_single_item .footer_menu {
-    margin: 0;
-    padding: 0;
-    list-style: none; }
-    .footer_wrap .footer_single_item .footer_menu li {
-      margin-bottom: 15px; }
-      .footer_wrap .footer_single_item .footer_menu li a {
-        display: inline-block;
-        color: #DEDBDB;
-        font: 400 15px/30px "Poppins", sans-serif;
-        text-decoration: none;
-        position: relative;
-        -webkit-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        transition: all 0.5s; }
-        .footer_wrap .footer_single_item .footer_menu li a:before {
-          position: absolute;
-          content: "-";
-          top: 50%;
-          -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-          left: 5px;
-          -webkit-transition: all 0.5s;
-          -o-transition: all 0.5s;
-          transition: all 0.5s;
-          color: #DEDBDB;
-          opacity: 0; }
-        .footer_wrap .footer_single_item .footer_menu li a:hover {
-          color: #FF264A;
-          padding-left: 8px; }
-          .footer_wrap .footer_single_item .footer_menu li a:hover:before {
-            left: 0;
-            color: #FF264A;
-            opacity: 1; }
+/* =========================   get_in_touch_wrap   =============================  */
+.get_in_touch_wrap {
+  padding: 105px 0 100px; }
 
-/*  ========================================  footer_wrap  ======================================  */
+.get_in_touch_wrap .get_in_touch_content .sec_title {
+  margin-bottom: 15px; }
+
+.get_in_touch_wrap .get_in_touch_content p {
+  padding-right: 110px;
+  margin-bottom: 30px; }
+
+.get_in_touch_wrap .get_in_touch_content .get_in_touch_list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.get_in_touch_wrap .get_in_touch_content .get_in_touch_list li {
+  color: #6e7279;
+  font: 400 15px/40px "Poppins", sans-serif; }
+
+.get_in_touch_wrap .get_in_touch_content .get_in_touch_list li i {
+  margin-right: 10px; }
+
+.get_in_touch_wrap .contact_form {
+  padding-top: 15px; }
+
+.get_in_touch_wrap .contact_form .row {
+  margin: 0 -9px; }
+
+.get_in_touch_wrap .contact_form .form-group {
+  padding: 0 9px;
+  margin-bottom: 20px; }
+
+.get_in_touch_wrap .contact_form .form-group .form-control {
+  background: #eef1f9;
+  color: #6e7279;
+  font: 400 15px/40px "Poppins", sans-serif;
+  border: 1px solid rgba(14, 36, 75, 0.1);
+  border-radius: 5px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  height: 50px; }
+
+.get_in_touch_wrap .contact_form .form-group .form-control::-webkit-input-placeholder {
+  color: #6e7279;
+  opacity: 1; }
+
+.get_in_touch_wrap .contact_form .form-group .form-control:-ms-input-placeholder {
+  color: #6e7279;
+  opacity: 1; }
+
+.get_in_touch_wrap .contact_form .form-group .form-control::-ms-input-placeholder {
+  color: #6e7279;
+  opacity: 1; }
+
+.get_in_touch_wrap .contact_form .form-group .form-control::placeholder {
+  color: #6e7279;
+  opacity: 1; }
+
+.get_in_touch_wrap .contact_form .form-group .form-control:-ms-input-placeholder {
+  color: #6e7279; }
+
+.get_in_touch_wrap .contact_form .form-group .form-control::-ms-input-placeholder {
+  color: #6e7279; }
+
+.get_in_touch_wrap .contact_form .form-group textarea.form-control {
+  min-height: 150px; }
+
+/* =========================   get_in_touch_wrap   =============================  */
+.our_team_wrap {
+  padding: 112px 0 150px;
+  background: #fff8f9; }
+
+.our_team_wrap .our_team_title {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 62px; }
+
+.our_team_wrap .our_team_title b {
+  display: block;
+  font-weight: 700; }
+
+.our_team_wrap .team_single_item {
+  position: relative; }
+
+.our_team_wrap .team_single_item .item_img img {
+  width: 100%; }
+
+.our_team_wrap .team_single_item .team_member_details {
+  padding: 0 15px;
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  right: 0;
+  width: 100%; }
+
+.our_team_wrap .team_single_item .team_member_details .member_details_inner {
+  background: #ffffff;
+  -webkit-box-shadow: 4px 0 10px rgba(0, 10, 40, 0.1);
+  box-shadow: 4px 0 10px rgba(0, 10, 40, 0.1);
+  border: 1px solid #e8eaee;
+  padding: 24px 45px 18px;
+  overflow: hidden;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+
+.our_team_wrap .team_single_item .team_member_details .member_details_inner .member_name {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 25px; }
+
+.our_team_wrap .team_single_item .team_member_details .member_details_inner .member_social_link {
+  margin: 23px 0 -82px;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  border-top: 1px solid #d6dbe8;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+
+.our_team_wrap .team_single_item .team_member_details .member_details_inner .member_social_link li {
+  display: inline-block;
+  padding: 25px 8px 7px; }
+
+.our_team_wrap .team_single_item .team_member_details .member_details_inner .member_social_link li a {
+  display: inline-block; }
+
+.our_team_wrap .team_single_item:hover .team_member_details .member_details_inner {
+  background: #f9f9f9;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.our_team_wrap .team_single_item:hover .team_member_details .member_details_inner .member_social_link {
+  margin-bottom: 0; }
+
+/*  ================  footer_wrap  ============================ */
+.footer_wrap {
+  background: #0e244b url(../img/footer_bg.jpg) no-repeat scroll top left/cover;
+  padding: 115px 0 0; }
+
+.footer_wrap .footer_top {
+  margin-bottom: 70px; }
+
+.footer_wrap .footer_left_widget {
+  margin-bottom: 50px; }
+
+.footer_wrap .footer_left_widget .footer_logo {
+  margin-bottom: 25px; }
+
+.footer_wrap .footer_left_widget .footer_logo a {
+  display: inline-block;
+  font: normal 28px/30px "Poppins", sans-serif;
+  text-decoration: none;
+  color: #fff; }
+
+.footer_wrap .footer_left_widget .footer_logo a img {
+  display: inline-block; }
+
+.footer_wrap .footer_left_widget p {
+  color: #a3afd0;
+  max-width: 390px;
+  width: 100%;
+  margin-bottom: 30px; }
+
+.footer_wrap .footer_left_widget .footer_social {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.footer_wrap .footer_left_widget .footer_social li {
+  display: inline-block;
+  margin-right: 10px; }
+
+.footer_wrap .footer_left_widget .footer_social li:last-child {
+  margin-right: 0; }
+
+.footer_wrap .footer_left_widget .footer_social li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 38px;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 50%; }
+
+.footer_wrap .footer_left_widget .footer_social li a:hover {
+  background: #fff;
+  color: #faa43c; }
+
+.footer_widget {
+  padding-top: 10px;
+  margin-bottom: 50px; }
+
+.footer_widget .footer_title {
+  color: #fff;
+  font: normal 18px/30px "Poppins", sans-serif;
+  margin-bottom: 20px; }
+
+.footer_widget .footer_menu {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.footer_widget .footer_menu li a {
+  display: inline-block;
+  color: #a3afd0;
+  font: 400 14px/29px "Poppins", sans-serif;
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+
+.footer_widget .footer_menu li a::before {
+  position: absolute;
+  content: "-";
+  top: 50%;
+  font: 400 14px/29px "Poppins", sans-serif;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 5px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 0;
+  color: #faa43c; }
+
+.footer_widget .footer_menu li a:hover {
+  color: #faa43c;
+  padding-left: 10px; }
+
+.footer_widget .footer_menu li a:hover::before {
+  left: 0;
+  opacity: 1; }
+
+.footer_bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 50px 0 55px; }
+
+.footer_bottom .copy_right {
+  color: #a3afd0;
+  font: 400 14px/29px "Poppins", sans-serif; }
+
+/*  ================  footer_wrap  ============================ */

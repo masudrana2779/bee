@@ -1,78 +1,225 @@
 /*  =========================           skillWrap             ========================   */
 .skillWrap {
-    background: #fff;
+  background: #fff;
 
-    .secTop {
-        .secSubTitle {}
-
-        .secTitle {}
+  .secTop {
+    .secSubTitle {
     }
 
-    .skillContent {
-        .skillTitle {
-            margin-bottom: 20px;
-        }
-
-        .secPara {
-            margin-bottom: 30px;
-        }
-
-        .btnWrap {
-            .btnBorder {
-                padding: 5px 20px;
-                font-size: 16px;
-            }
-        }
+    .secTitle {
     }
+  }
+
+  .skillContent {
+    .skillTitle {
+      margin-bottom: 20px;
+    }
+
+    .secPara {
+      margin-bottom: 30px;
+    }
+
+    .btnWrap {
+      .btnBorder {
+        padding: 5px 20px;
+        font-size: 16px;
+      }
+    }
+  }
 }
 
-.skillProgressBarWrap {}
+.skillProgressBarWrap {
+}
 
 .progressSingleItem {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 
-    .progressTitle {
-        position: relative;
-        margin-bottom: 5px;
+  .progressTitle {
+    position: relative;
+    margin-bottom: 5px;
 
-        span {
-            position: absolute;
-            right   : 0;
-        }
+    span {
+      position: absolute;
+      right: 0;
     }
+  }
 
-    .progress {
-        height       : 4px;
-        border-radius: 0;
+  .progress {
+    height: 4px;
+    border-radius: 0;
 
-        .progress-bar {
-            background: $dark;
-        }
+    .progress-bar {
+      background: $dark;
     }
+  }
 }
 
 .clientCountDown {
-    padding-top: 50px;
-    .counterItem {
-        .counterNumber {
-            font-size: 40px;
-            font-weight: 700;
-            .counter {}
-        }
+  padding-top: 50px;
 
-        .counterBottom {
-            margin-bottom: 10px;
-            .countIcon {
-                font-size: 30px;
-                margin-right: 15px;
-                color: #a0a0a0;
-                i {}
-            }
-        }
-            .counterTitle {
-                font-size: 20px;
-            }
+  .counterItem {
+    .counterNumber {
+      font-size: 40px;
+      font-weight: 700;
+
+      .counter {
+      }
     }
+
+    .counterBottom {
+      margin-bottom: 10px;
+
+      .countIcon {
+        font-size: 30px;
+        margin-right: 15px;
+        color: #a0a0a0;
+
+        i {
+        }
+      }
+    }
+
+    .counterTitle {
+      font-size: 20px;
+    }
+  }
 }
 
 /*  =========================           skillWrap             ========================   */
+
+
+.price_bar_item {
+  height: 18px;
+  width: 100%;
+  border: 1px solid #1b3869;
+  border-radius: 50px;
+  padding: 6px;
+
+  .price_bar_single {
+    background: #d1c4e9;
+    border-radius: 5px;
+    height: 5px;
+
+    .price_bar {
+      height: 5px;
+      width: 10%;
+      text-align: right;
+      background: #673ab7;
+      border-radius: 5px;
+      position: relative;
+      overflow: initial !important;
+
+      .count {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        background: #4527a0;
+        border-radius: 50px;
+        font-size: 12px;
+        line-height: 30px;
+        display: block;
+        width: 70px;
+        text-align: center;
+        right: 0;
+        color: #fff;
+        border: 2px solid #fff8f9;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+
+
+
+.skill_wrap {
+  background: #f8f9fb;
+  padding: 95px 0 65px;
+}
+
+
+/*=====Start skill-two-area css =========*/
+.skill-two-area {
+  padding: 135px 0px 110px;
+}
+
+.skill-two-area .skill-text {
+  padding-right: 5px;
+  position: relative;
+  z-index: 1;
+}
+
+.skill-two-area .progress-element {
+  padding-top: 0px;
+  position: relative;
+  z-index: 1;
+}
+
+.skill-two-area .progress-element .pr-item {
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.pr-item {
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.bt-skill-item {
+  margin-top: 40px;
+}
+
+.bt-skill {
+  margin-top: 5px;
+}
+
+.bt-skill .bt-skillholder {
+  background: #e7ebf1;
+  display: block;
+  height: 8px;
+  width: 100%;
+  border-radius: 0px;
+}
+
+.bt-skill .bt-skillholder .bt-skillbar .dataBar{
+  //position: relative;
+}
+.bt-skill .bt-skillholder .dataBar {
+  position: absolute;
+  content: " (" attr(data-percent) ")";
+  font-size: 10px;
+  background: red;
+  color: #fff;
+  padding: 0 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  height: 26px;
+}
+
+
+.bt-skill .bt-skillholder .bt-skillbar {
+  height: 8px;
+  position: relative;
+  float: left;
+  border-radius: 0px;
+  background-image: -moz-linear-gradient( 0deg, rgb(254,193,16) 0%, rgb(251,210,20) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(254,193,16) 0%, rgb(251,210,20) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgb(254,193,16) 0%, rgb(251,210,20) 100%);
+}
+
+/*=====End skill-two-area css =========*/

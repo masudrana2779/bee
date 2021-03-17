@@ -1,0 +1,77 @@
+
+.our_team_wrap {
+  padding: 112px 0 150px;
+  background: #fff8f9;
+}
+
+.our_team_wrap .our_team_title {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 62px;
+}
+
+.our_team_wrap .our_team_title b {
+  display: block;
+  font-weight: 700;
+}
+
+.our_team_wrap .team_single_item {
+  position: relative;
+}
+
+.our_team_wrap .team_single_item .item_img img {
+  width: 100%;
+}
+
+.our_team_wrap .team_single_item .team_member_details {
+  padding: 0 15px;
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.our_team_wrap .team_single_item .team_member_details .member_details_inner {
+  background: #ffffff;
+  box-shadow: 4px 0 10px rgba(0, 10, 40, 0.1);
+  border: 1px solid #e8eaee;
+  padding: 24px 45px 18px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.our_team_wrap .team_single_item .team_member_details .member_details_inner .member_name {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.our_team_wrap .team_single_item .team_member_details .member_details_inner .member_social_link {
+  margin: 23px 0 -82px;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  border-top: 1px solid #d6dbe8;
+  transition: all 0.5s;
+}
+
+.our_team_wrap .team_single_item .team_member_details .member_details_inner .member_social_link li {
+  display: inline-block;
+  padding: 25px 8px 7px;
+}
+
+.our_team_wrap .team_single_item .team_member_details .member_details_inner .member_social_link li a {
+  display: inline-block;
+}
+
+.our_team_wrap .team_single_item:hover .team_member_details .member_details_inner {
+  background: #f9f9f9;
+  box-shadow: none;
+}
+
+.our_team_wrap .team_single_item:hover .team_member_details .member_details_inner .member_social_link {
+  margin-bottom: 0;
+}
