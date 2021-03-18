@@ -93,7 +93,8 @@ p {
   -o-transition: all 0.5s;
   transition: all 0.5s; }
   .btnWrap .btnGlob:hover {
-    background: #ffffff; }
+    background: #ffffff;
+    color: #000; }
   .btnWrap .btnGlob.btnSqure {
     background: #000;
     border: 2px solid #000; }
