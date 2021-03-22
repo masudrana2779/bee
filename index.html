@@ -13,8 +13,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
-
+<body id="home" data-spy="scroll" data-target="#mainMenuNav" data-offset="0">
 <section class="banner_wrap">
     <div class="banner_inner">
         <div class="banner_slider">
@@ -23,7 +22,7 @@
                     <h6 class="banner_name text-center">Welcome</h6>
                     <h1 class="banner_heading text-center">I'm Merry crayy</h1>
                     <div class="btnWrap scroll_down text-center">
-                        <a href="#aboutWrap" class="btnGlob">About Me</a>
+                        <a href="#aboutUs" class="btnGlob">About Me</a>
                     </div>
                 </div>
             </div>
@@ -36,7 +35,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <nav class="navbar navbar-expand-lg">
+                <nav class="navbar navbar-expand-lg" id="mainMenuNav">
                     <div class="logo"><a href="#"><img src="./assets/img/logo.png" alt="logo"></a></div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu"
                             aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,16 +44,16 @@
                     <div class="collapse navbar-collapse mainMenu" id="mainMenu">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Home</a>
+                                <a class="nav-link" href="#home">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#aboutWrap">About</a>
+                                <a class="nav-link" href="#aboutUs">About</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#Skill">Skill</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#Services">Services</a>
+                                <a class="nav-link" href="#services">Services</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#Portfolio">Portfolio</a>
@@ -78,7 +77,7 @@
 <!-- Header -->
 
 <!-- start about_wrap -->
-<section class="about_wrap bg_w secPadding" id="about_us">
+<section class="about_wrap bg_w secPadding" id="aboutUs">
     <div class="container">
         <div class="row">
             <div class="col-lg-7 col-md-12 col-sm-12 col-12">
@@ -141,7 +140,7 @@
 <!-- end about_wrap -->
 
 <!-- skill -->
-<div class="skillWrap">
+<div class="skillWrap" id="Skill">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -328,7 +327,7 @@
 <!-- end service_wrap  -->
 
 <!--========= Start portfolio latest_work_wrap area =========-->
-<section class="latest_work_wrap center_content cus_filter bg_w" id="portfolio">
+<section class="latest_work_wrap center_content cus_filter bg_w" id="Portfolio">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -542,7 +541,7 @@
 <!-- End our_team_wrap -->
 
 <!-- start get_in_touch_wrap -->
-<section class="get_in_touch_wrap bg_w" id="get_in_touch_wrap">
+<section class="get_in_touch_wrap bg_w" id="Contact">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-12">
