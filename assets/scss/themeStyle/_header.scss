@@ -11,7 +11,10 @@
 
         .logo {
             a {
-                img {}
+                img {
+                    max-width: 25px;
+                    width: 100%;
+                }
             }
         }
 
