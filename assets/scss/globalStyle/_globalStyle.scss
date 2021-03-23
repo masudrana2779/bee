@@ -2,12 +2,22 @@
   margin: 0;
   padding: 0;
 }
-
+html {
+  overflow: hidden;
+}
 body {
   //margin-top: 100vh;
   font-family: $pop;
   font-size: 16px;
   line-height: 26px;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 1px;
+  -webkit-perspective: 1px;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
 }
 
 h1,
