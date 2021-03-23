@@ -37,6 +37,7 @@
             font-weight: 500;
             transition: all 0.5s;
             position: relative;
+            opacity: 0.4;
 
             &::before {
               position: absolute;
@@ -51,7 +52,7 @@
             }
 
             &.menuHover {
-              opacity: 0.4;
+              //opacity: 0.4;
             }
 
             &:hover {

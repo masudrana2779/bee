@@ -12,7 +12,7 @@
   left: 0;
   transform-style: preserve-3d;
   flex-direction: column;
-  //overflow: hidden;
+  overflow: hidden;
 
   &::before {
     position: absolute;
@@ -40,6 +40,19 @@
     content: "";
     transform: translateZ(-1px) scale(2);
     -webkit-transform: translateZ(-1px) scale(2);
+  }
+
+
+  #banner_wrap {
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://picsum.photos/1920/1080?random");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
 

@@ -3,6 +3,19 @@
 
 
     $(document).ready(function () {
+        function bannerParallax(){
+            document.addEventListener("scroll", (e) => {
+                let scroll_pos = window.scrollY;
+                const head = document.querySelector("#banner_wrap");
+
+                console.log(scroll_pos);
+                scroll_pos = scroll_pos * -1 * 0.5;
+
+                head.style.backgroundPosition = "0px " + scroll_pos + "px";
+            });
+
+        }
+        bannerParallax();
 
 
         // scrollSmoothTop
@@ -13,7 +26,7 @@
                     if (target.length) {
                         event.preventDefault();
                         $('html, body').stop().animate({
-                            scrollTop: target.offset().top
+                            scrollTop: target.offset().top - 55
                         }, 500);
                     }
                 });
