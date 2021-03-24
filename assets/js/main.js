@@ -3,7 +3,7 @@
 
 
     $(document).ready(function () {
-        function bannerParallax(){
+        function bannerParallax() {
             document.addEventListener("scroll", (e) => {
                 let scroll_pos = window.scrollY;
                 const head = document.querySelector("#banner_wrap");
@@ -15,6 +15,7 @@
             });
 
         }
+
         bannerParallax();
 
 
@@ -34,6 +35,14 @@
         }
 
         scrollSmoothTop();
+
+        /*========= Parallax Init ========*/
+        if ($('#apps_craft_animation').length > 0) {
+            $('#apps_craft_animation').parallax({
+                scalarX: 10.0,
+                scalarY: 0.0,
+            });
+        }
 
         // menuOpacity
         function menuOpacity() {
@@ -143,10 +152,10 @@
 
         lightBoxImages();
 
-         /*---------------------------------------
-                SKILLS PROGRESS BAR
-         ---------------------------------------*/
-        function skillBAr1(){
+        /*---------------------------------------
+               SKILLS PROGRESS BAR
+        ---------------------------------------*/
+        function skillBAr1() {
             var valll = jQuery('.count').innerHTML;
             try {
                 jQuery('.skillProgressBarWrap').appear(function () {
@@ -160,6 +169,7 @@
 
             }
         }
+
         skillBAr1();
         /*---------------------------------------
                 SKILLS PROGRESS BAR
