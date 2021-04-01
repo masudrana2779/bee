@@ -103,15 +103,17 @@
 
     .price_bar {
       height: 5px;
-      width: 10%;
+      width: 70px;
       text-align: right;
       background: #673ab7;
       border-radius: 5px;
       position: relative;
       overflow: initial !important;
+      padding-left: 70px;
 
-      .count {
+      &:before {
         position: absolute;
+        content: attr(dataValue);
         top: 50%;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);

@@ -156,14 +156,35 @@
                SKILLS PROGRESS BAR
         ---------------------------------------*/
         function skillBAr1() {
-            var valll = jQuery('.count').innerHTML;
             try {
                 jQuery('.skillProgressBarWrap').appear(function () {
-                    jQuery('.price_bar_single').each(function () {
-                        jQuery(this).find('.price_bar').animate({
-                            width: jQuery(this).attr('data-percent'),
-                        }, 2500);
-                    });
+
+                    setTimeout(function(){
+
+                        $('.price_bar').each(function() {
+                            var me = $(this);
+                            var count = $('count');
+                            var perc = me.attr("data-percent");
+
+                            //TODO: left and right text handling
+
+                            var current_perc = 0;
+
+                            var progress = setInterval(function() {
+                                if (current_perc>=perc) {
+                                    clearInterval(progress);
+                                } else {
+                                    current_perc +=1;
+                                    me.attr('dataValue', (current_perc)+'%').css({
+                                        width: (current_perc) + '%',
+                                });
+                                }
+
+                            }, 50);
+
+                        });
+
+                    },300);
                 });
             } catch (err) {
 
